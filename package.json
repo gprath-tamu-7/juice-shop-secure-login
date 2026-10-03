@@ -1,0 +1,14 @@
+{
+    "name": "juice-shop-secure-login",
+    "version": "1.0.0",
+    "description": "Secure login form for OWASP Juice Shop assignment",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^5.2.1",
+        "express-rate-limit": "^8.7.0",
+        "helmet": "^8.3.0"
+    }
+}

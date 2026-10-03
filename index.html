@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>OWASP Juice Shop - Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">
+            OWASP Juice Shop
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="main-container">
+
+        <div class="login-card">
+
+            <h1>Login</h1>
+
+            <form id="loginForm" novalidate>
+
+                <!-- Email -->
+                <div class="form-group">
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email*"
+                        autocomplete="email"
+                        maxlength="254"
+                    >
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="form-group">
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Password*"
+                        autocomplete="current-password"
+                        minlength="8"
+                        maxlength="128"
+                    >
+
+                </div>
+
+
+                <!-- Forgot Password -->
+                <a
+                    href="#"
+                    class="forgot-password"
+                    onclick="return false;"
+                >
+                    Forgot your password?
+                </a>
+
+
+                <!-- Login Button -->
+                <button
+                    type="submit"
+                    class="login-button"
+                >
+                    Log in
+                </button>
+
+
+                <!-- Validation / Server Messages -->
+                <p
+                    id="message"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+
+            <!-- Divider -->
+            <div class="divider">
+                <span>or</span>
+            </div>
+
+
+            <!-- Registration Link -->
+            <div class="register">
+
+                <a
+                    href="#"
+                    onclick="return false;"
+                >
+                    Not yet a customer?
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
